@@ -18,7 +18,7 @@ router.post('/tasks', auth, async (req, res) => {
 })
 // GET /tasks?completed=true
 // GET /tasks?limit=10&skip=
-// GET /tasks?sortBy=createdAt_asc
+// GET /tasks?sortBy=createdAt:asc
 router.get('/tasks', auth, async (req, res) => {
   const match = {}
   const sort = {}
